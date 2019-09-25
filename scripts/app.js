@@ -17,7 +17,7 @@ document.querySelector('.btn-roll').addEventListener('click', (event) => {
     if (gamePlaying) {
         document.querySelector('.dice').style.display = 'block';
         const dice = Math.floor(Math.random() * 6) + 1;
-        document.querySelector('.dice').setAttribute('src', `dice-${dice}.png`);
+        document.querySelector('.dice').setAttribute('src', `./images/dice-${dice}.png`);
 
         if (dice !== 1) {
             roundScore += dice;
