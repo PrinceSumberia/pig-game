@@ -26,6 +26,7 @@ const initGame = () => {
 const nextPlayer = () => {
     activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
     roundScore = 0;
+    previousDice = 0;
     document.querySelector('#current-0').textContent = '0';
     document.querySelector('#current-1').textContent = '0';
     document.querySelector('.player-0-panel').classList.toggle('active');
