@@ -12,6 +12,9 @@
 
 <body>
     <div class="wrapper clearfix">
+        <label class="label-winning-score">Winning Score</label>
+        <input type="text" placeholder="Final Score" onkeydown="return event.keyCode !== 69" name="input-winning-score"
+            id="winning-score" class="final-score">
         <div class="player-0-panel active">
             <div class="player-name" id="name-0">Player 1</div>
             <div class="player-score" id="score-0">0</div>
@@ -35,6 +38,7 @@
         <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
 
         <img src="./images/dice-5.png" alt="Dice" class="dice">
+        <img src="./images/dice-3.png" alt="Dice" class="second-dice">
     </div>
     <script src="./scripts/functions.js"></script>
     <script src="./scripts/app.js"></script>

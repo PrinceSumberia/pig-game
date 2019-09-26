@@ -1,9 +1,14 @@
-const initGame = () => {
+const initGame = (setWinningScore = 100) => {
     scores = [0, 0];
     activePlayer = 0;
     roundScore = 0;
+    winningScore = setWinningScore;
     gamePlaying = true;
+
+    document.querySelector("#winning-score").value = winningScore;
+
     document.querySelector('.dice').style.display = 'none';
+    document.querySelector('.second-dice').style.display = 'none';
 
     document.querySelector(`#score-0`).textContent = '0';
     document.querySelector(`#score-1`).textContent = '0';
@@ -32,4 +37,5 @@ const nextPlayer = () => {
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
     document.querySelector('.dice').style.display = 'none';
+    document.querySelector('.second-dice').style.display = 'none';
 };
